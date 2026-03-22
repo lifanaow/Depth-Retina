@@ -5,5 +5,5 @@ Fundus-to-geometry framework that reconstructs metrically calibrated full-field 
 <br>
 <br>
 Please try demo on https://u413381-ukzq-8def9fa2.bjb1.seetacloud.com:8443
-<img width="1475" height="713" alt="image" src="https://github.com/user-attachments/assets/c4aa09a7-b95f-42d1-93a3-a3a4a76d0776" />
+<img width="2950" height="1426" alt="image" src="https://github.com/user-attachments/assets/0fdac745-3000-412a-b352-7b12429264b7" />
 
