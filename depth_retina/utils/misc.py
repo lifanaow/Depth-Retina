@@ -1,29 +1,3 @@
-# MIT License
-
-# Copyright (c) 2022 Intelligent Systems Lab Org
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
-# File author: Shariq Farooq Bhat
-
-"""Miscellaneous utility functions."""
-
 from scipy import ndimage
 
 import base64
@@ -245,9 +219,6 @@ def compute_metrics(gt, pred, interpolate=True, garg_crop=False, eigen_crop=True
     return compute_errors(gt_depth[valid_mask], pred[valid_mask])
 
 
-#################################### Model uilts ################################################
-
-
 def parallelize(config, model, find_unused_parameters=True):
 
     if config.gpu is not None:
@@ -280,12 +251,6 @@ def parallelize(config, model, find_unused_parameters=True):
         model = torch.nn.DataParallel(model)
 
     return model
-
-
-#################################################################################################
-
-
-#####################################################################################################
 
 
 class colors:
@@ -337,7 +302,6 @@ class colors:
 def printc(text, color):
     print(f"{color}{text}{colors.reset}")
 
-############################################
 
 def get_image_from_url(url):
     response = requests.get(url)
